@@ -6,12 +6,13 @@
     <title> Pesquisa Culturama</title>
 </head>
 <body>
-<header>
+    <header>
     <h1>Pesquisa Online</h1>
 <section>
 <form action="" method="get">
+<!--DADOS PESSOAIS -->
     <fieldset>
-        <!--DADOS PESSOAIS -->
+   
 <legend>Dados Pessoais</legend>
     <label for="UserName">Nome</label>
     <input type="text" name="UserName" required>
@@ -20,28 +21,41 @@
     <input type="number" name="userAge" min="12" max="110" required>
     <br>
     <label for="Birthdate">Data de Nascimento</label>
-    <input type="date" name="Birthdate" required>
+    <input type="date" name="Birthdate">
     <br>
     <label for="userEmail">Email</label>
     <input type="email" name="userEmail" required>
     <br>
     <label for="UserNumberPhone">Telefone</label>
-    <input type="tel" name="UserNumberPhone" pattern="(0-9){11}"placeholder="DDD+número">
+    <input type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número">
     <br>
     <label for="userImage">Upload de Foto</label>
     <input type="file" accept="image/*" name="userImage">
     <br>
     </fieldset>
+<!--PERFIL -->
+<fieldset>
+    <legend>Perfil</legend>
+<p>Genêro:</p>
+    <input type="radio" name="UserGender" value="Feminino">
+    <label for="UserGender">Feminino</label>
+
+    <input type="radio" name="UserGender" value="Masculino">
+    <label for="UserGender">Masculino</label>
+
+    <input type="radio" name="UserGender" value="NotInformed">
+    <label for="UserGender">Prefiro não informar</label>
+</fieldset>
+
+
+
+
     <button type="submit">Enviar</button>
 
 
 </button>
 </form>
     </section>
-
-    <p>
-
-    </p>
     </header>
 
 

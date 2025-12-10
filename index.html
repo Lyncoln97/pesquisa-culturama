@@ -6,12 +6,12 @@
     <title> Pesquisa Culturama</title>
 </head>
 <body>
-<header>
+    <header>
     <h1>Pesquisa Online</h1>
 <section>
 <form action="" method="get">
+<!--DADOS PESSOAIS -->
     <fieldset>
-        <!--DADOS PESSOAIS -->
 <legend>Dados Pessoais</legend>
     <label for="UserName">Nome</label>
     <input type="text" name="UserName" required>
@@ -20,28 +20,110 @@
     <input type="number" name="userAge" min="12" max="110" required>
     <br>
     <label for="Birthdate">Data de Nascimento</label>
-    <input type="date" name="Birthdate" required>
+    <input type="date" name="Birthdate">
     <br>
     <label for="userEmail">Email</label>
     <input type="email" name="userEmail" required>
     <br>
     <label for="UserNumberPhone">Telefone</label>
-    <input type="tel" name="UserNumberPhone" pattern="(0-9){11}"placeholder="DDD+número">
+    <input type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número">
     <br>
     <label for="userImage">Upload de Foto</label>
     <input type="file" accept="image/*" name="userImage">
     <br>
     </fieldset>
+<!--PERFIL -->
+<fieldset>
+    <legend>Perfil</legend>
+    <!--Genero -->
+<p>Genêro:</p>
+    <input type="radio" name="UserGender" value="Feminino">
+    <label for="UserGender">Feminino</label>
+
+    <input type="radio" name="UserGender" value="Masculino">
+    <label for="UserGender">Masculino</label>
+
+    <input type="radio" name="UserGender" value="NotInformed">
+    <label for="UserGender">Prefiro não informar</label>
+    <br>
+<!--Estado Civil -->
+    <label for="MaritalStatus">Estado Civil</label>
+    <select name="MaritalStatus">
+    <option value="NotInformed">Selecione...</option>
+    <option value="Casado">Casado(a)</option>
+    <option value="Solteiro">Solteiro(a)</option>
+    <option value="Divorciado">Divorciado(a)</option>
+    <option value="Viuvo">Viuvo(a)</option>
+    <option value="UniaoEstavel">União Estavel</option>
+    <!--Localidade -->
+</select>
+<br>
+<label for="Location">Estado</label required>
+    <select name="Location">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+</select>
+<br>
+<label for="UserName">Cidade</label>
+    <input type="text" name="Cidade" required>
+</fieldset>
+
+                <!--HABITOS-->
+<fieldset>
+
+    <legend>Hábitos </legend>
+        <p>Redes Sociais</p>
+    <input type="checkbox" name="socials" value="Instagram">
+    <label for="socials">Instagram</label>
+    <br>
+<input type="checkbox" name="socials" value="Facebook">
+    <label for="socials">Facebook</label>
+    <br>
+    <input type="checkbox" name="socials" value="Tiktok">
+    <label for="socials">Tiktok</label>
+<br>
+    <input type="checkbox" name="socials" value="LinkedIn">
+    <label for="socials">LinkedIn</label>
+    <br>
+        <input type="checkbox" name="socials" value="X">
+    <label for="socials">X</label>
+    <br>
+        <input type="checkbox" name="socials" value="Kwai">
+    <label for="socials">Kwai</label>
+    <br>
+        <input type="checkbox" name="socials" value="YouTube">
+    <label for="socials">YouTube</label>
+</fieldset>
+    
     <button type="submit">Enviar</button>
 
-
-</button>
 </form>
     </section>
-
-    <p>
-
-    </p>
     </header>
 
 

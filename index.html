@@ -1,112 +1,110 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pesquisa Culturama</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa Culturama</title>
+  </head>
+  <body>
     <header>
-    <h1>Pesquisa Online</h1>
-<section>
-<form action="" method="get">
-<!--DADOS PESSOAIS -->
-    <fieldset>
-<legend>Dados Pessoais</legend>
-    <label for="UserName">Nome</label>
-    <input type="text" name="UserName" required>
-    <br>
-    <label for="userAge">Idade</label>
-    <input type="number" name="userAge" min="12" max="110" required>
-    <br>
-    <label for="Birthdate">Data de Nascimento</label>
-    <input type="date" name="Birthdate">
-    <br>
-    <label for="userEmail">Email</label>
-    <input type="email" name="userEmail" required>
-    <br>
-    <label for="UserNumberPhone">Telefone</label>
-    <input type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número">
-    <br>
-    <label for="userImage">Upload de Foto</label>
-    <input type="file" accept="image/*" name="userImage">
-    <br>
-    </fieldset>
-<!--PERFIL -->
-<fieldset>
-    <legend>Perfil</legend>
-    <!--Genero -->
-<p>Genêro:</p>
-    <input type="radio" name="UserGender" value="Feminino">
-    <label for="UserGender">Feminino</label>
+      <h1>Pesquisa Online</h1>
+      <section>
+        <form action="" method="get">
+          <!--DADOS PESSOAIS -->
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="UserName">Nome</label>
+            <input type="text" name="UserName" required />
+            <br />
+            <label for="userAge">Idade</label>
+            <input type="number" name="userAge" min="12" max="110" required />
+            <br />
+            <label for="Birthdate">Data de Nascimento</label>
+            <input type="date" name="Birthdate" />
+            <br />
+            <label for="userEmail">Email</label>
+            <input type="email" name="userEmail" required />
+            <br />
+            <label for="UserNumberPhone">Telefone</label>
+            <input
+              type="tel"
+              name="UserNumberPhone"
+              pattern="[0-9]{11}"
+              placeholder="DDD+número"
+            />
+            <br />
+            <label for="userImage">Upload de Foto</label>
+            <input type="file" accept="image/*" name="userImage" />
+            <br />
+          </fieldset>
+          <!--PERFIL -->
+          <fieldset>
+            <legend>Perfil</legend>
+            <!--Genero -->
+            <p>Genêro:</p>
+            <input type="radio" name="UserGender" value="Feminino" />
+            <label for="UserGender">Feminino</label>
 
-    <input type="radio" name="UserGender" value="Masculino">
-    <label for="UserGender">Masculino</label>
+            <input type="radio" name="UserGender" value="Masculino" />
+            <label for="UserGender">Masculino</label>
 
-    <input type="radio" name="UserGender" value="NotInformed">
-    <label for="UserGender">Prefiro não informar</label>
-    <br>
-<!--Estado Civil -->
-    <label for="MaritalStatus">Estado Civil</label>
-    <select name="MaritalStatus">
-    <option value="NotInformed">Selecione...</option>
-    <option value="Casado">Casado(a)</option>
-    <option value="Solteiro">Solteiro(a)</option>
-    <option value="Divorciado">Divorciado(a)</option>
-    <option value="Viuvo">Viuvo(a)</option>
-    <option value="UniaoEstavel">União Estavel</option>
-    <!--Localidade -->
-</select>
-<br>
-<label for="Location">Estado</label>
-    <select name="Location">
-            <option value="AC">AC, Acre</option>
-            <option value="AL">AL, Alagoas</option>
-            <option value="AP">AP, Amapá</option>
-            <option value="AM">AM, Amazonas</option>
-            <option value="BA">BA, Bahia</option>
-            <option value="CE">CE, Ceará</option>
-            <option value="DF">DF, Distrito Federal</option>
-            <option value="ES">ES, Espirito Santo</option>
-            <option value="GO">GO, Goiás</option>
-            <option value="MA">MA, Maranhão</option>
-            <option value="MS">MS, Mato Grosso do Sul</option>
-            <option value="MT">MT, Mato Grosso</option>
-            <option value="MG">MG, Minas Gerais</option>
-            <option value="PA">PA, Pará</option>
-            <option value="PB">PB, Paraíba</option>
-            <option value="PR">PR, Paraná</option>
-            <option value="PE">PE, Pernambuco</option>
-            <option value="PI">PI, Piauí</option>
-            <option value="RJ">RJ, Rio de Janeiro</option>
-            <option value="RN">RN, Rio Grande do Norte</option>
-            <option value="RS">RS, Rio Grande do Sul</option>
-            <option value="RO">RO, Rondônia</option>
-            <option value="RR">RR, Roraima</option>
-            <option value="SC">SC, Santa Catarina</option>
-            <option value="SP">SP, São Paulo</option>
-            <option value="SE">SE, Sergipe</option>
-            <option value="TO">TO, Tocantins</option>
-</select>
-<br>
-<label for="UserName">Cidade</label>
-    <input type="text" name="Cidade" required>
-</fieldset>
+            <input type="radio" name="UserGender" value="NotInformed" />
+            <label for="UserGender">Prefiro não informar</label>
+            <br />
+            <!--Estado Civil -->
+            <label for="MaritalStatus">Estado Civil</label>
+            <select name="MaritalStatus">
+              <option value="NotInformed">Selecione...</option>
+              <option value="Casado">Casado(a)</option>
+              <option value="Solteiro">Solteiro(a)</option>
+              <option value="Divorciado">Divorciado(a)</option>
+              <option value="Viuvo">Viuvo(a)</option>
+              <option value="UniaoEstavel">União Estavel</option>
+              <!--Localidade -->
+            </select>
+            <br />
+            <label for="Location">Estado</label>
+            <select name="Location">
+              <option value="AC">AC, Acre</option>
+              <option value="AL">AL, Alagoas</option>
+              <option value="AP">AP, Amapá</option>
+              <option value="AM">AM, Amazonas</option>
+              <option value="BA">BA, Bahia</option>
+              <option value="CE">CE, Ceará</option>
+              <option value="DF">DF, Distrito Federal</option>
+              <option value="ES">ES, Espirito Santo</option>
+              <option value="GO">GO, Goiás</option>
+              <option value="MA">MA, Maranhão</option>
+              <option value="MS">MS, Mato Grosso do Sul</option>
+              <option value="MT">MT, Mato Grosso</option>
+              <option value="MG">MG, Minas Gerais</option>
+              <option value="PA">PA, Pará</option>
+              <option value="PB">PB, Paraíba</option>
+              <option value="PR">PR, Paraná</option>
+              <option value="PE">PE, Pernambuco</option>
+              <option value="PI">PI, Piauí</option>
+              <option value="RJ">RJ, Rio de Janeiro</option>
+              <option value="RN">RN, Rio Grande do Norte</option>
+              <option value="RS">RS, Rio Grande do Sul</option>
+              <option value="RO">RO, Rondônia</option>
+              <option value="RR">RR, Roraima</option>
+              <option value="SC">SC, Santa Catarina</option>
+              <option value="SP">SP, São Paulo</option>
+              <option value="SE">SE, Sergipe</option>
+              <option value="TO">TO, Tocantins</option>
+            </select>
+            <br />
+            <label for="UserName">Cidade</label>
+            <input type="text" name="Cidade" required />
+          </fieldset>
 
-<button type="submit">Enviar</button>
-
-
-</form>
-    </section>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </header>
 
+    <main></main>
 
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

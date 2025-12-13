@@ -1,0 +1,52 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color:whitesmoke;
+    font-family: "work sans", sans-serif;
+}
+
+main{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+img{
+    width: 100px;
+}
+
+h1{
+font-family: "Momo Trust Display",sans-serif;
+text-decoration:underline;
+}
+
+form{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 
+                0 6px 6px rgba(0, 0, 0, 0.23)
+
+
+}
+fieldset{
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px;
+    border: 2px solid #303030;
+    margin-bottom: 15px;
+    
+}
+legend{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}

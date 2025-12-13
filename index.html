@@ -13,20 +13,20 @@
 <!--DADOS PESSOAIS -->
     <fieldset>
 <legend>Dados Pessoais</legend>
-    <label for="UserName">Nome</label>
-    <input type="text" name="UserName" required>
+    <label for="name">Nome</label>
+    <input id="name" name="UserName" required>
     <br>
     <label for="userAge">Idade</label>
-    <input type="number" name="userAge" min="12" max="110" required>
+    <input id="userAge" name="userAge" min="12" max="110" required>
     <br>
     <label for="Birthdate">Data de Nascimento</label>
     <input type="date" name="Birthdate">
     <br>
-    <label for="userEmail">Email</label>
-    <input type="email" name="userEmail" required>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="userEmail" required>
     <br>
-    <label for="UserNumberPhone">Telefone</label>
-    <input type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número">
+    <label for="TEL">Telefone</label>
+    <input id="TEL" type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número">
     <br>
     <label for="userImage">Upload de Foto</label>
     <input type="file" accept="image/*" name="userImage">
@@ -37,14 +37,14 @@
     <legend>Perfil</legend>
     <!--Genero -->
 <p>Genêro:</p>
-    <input type="radio" name="UserGender" value="Feminino">
-    <label for="UserGender">Feminino</label>
+    <input id="genderfemea" type="radio" name="UserGender" value="Feminino">
+    <label for="genderfemea">Feminino</label>
 
-    <input type="radio" name="UserGender" value="Masculino">
-    <label for="UserGender">Masculino</label>
+    <input id="gendermale" type="radio" name="UserGender" value="Masculino">
+    <label for="gendermale">Masculino</label>
 
-    <input type="radio" name="UserGender" value="NotInformed">
-    <label for="UserGender">Prefiro não informar</label>
+    <input id="gender" type="radio" name="UserGender" value="NotInformed">
+    <label for="gender">Prefiro não informar</label>
     <br>
 <!--Estado Civil -->
     <label for="MaritalStatus">Estado Civil</label>
@@ -58,7 +58,7 @@
     <!--Localidade -->
 </select>
 <br>
-<label for="Location">Estado</label>
+<label for="Location">Estado</label required>
     <select name="Location">
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -89,24 +89,53 @@
             <option value="TO">Tocantins</option>
 </select>
 <br>
-<label for="UserName">Cidade</label>
-    <input type="text" name="Cidade" required>
+<label for="city">Cidade</label>
+    <input id="city" type="text" name="Cidade" required>
 </fieldset>
 
-<button type="submit">Enviar</button>
+                <!--HABITOS-->
+<fieldset>
 
+    <legend>Hábitos </legend>
+        <p>Redes Sociais</p>
+    <input id="insta" type="checkbox" name="socials" value="Instagram">
+    <label for="insta">Instagram</label>
+    <br>
+<input id="face" type="checkbox" name="socials" value="Facebook">
+    <label for="face">Facebook</label>
+    <br>
+    <input id="ttk" type="checkbox" name="socials" value="Tiktok">
+    <label for="ttk">Tiktok</label>
+<br>
+    <input id="linkedin" type="checkbox" name="socials" value="LinkedIn">
+    <label for="linkedin">LinkedIn</label>
+    <br>
+        <input id="twitter" type="checkbox" name="socials" value="X">
+    <label for="twitter">X</label>
+    <br>
+        <input id="Kwai" type="checkbox" name="socials" value="Kwai">
+    <label for="Kwai">Kwai</label>
+    <br>
+        <input id="youtube" type="checkbox" name="socials" value="YouTube">
+    <label for="youtube">YouTube</label>
+<br>
+    <label for="MusicStyle">Estilo Musical</label>
+    <input list="Styletypes" id="MusicStyle" type="text">
+    <datalist id="Styletypes">
+<option value="Rock">
+    <option value="Funk">
+        <option value="Pop">
+            <option value="Samba">
+                <option value="Pagode">
+                    <option value="Sertanejo">
+                        <option value="Eletrônica"></option>
+    </datalist>
+</fieldset>
+    
+    <button type="submit">Enviar</button>
 
 </form>
     </section>
     </header>
-
-
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
 </body>
 </html>

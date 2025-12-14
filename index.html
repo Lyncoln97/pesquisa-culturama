@@ -14,7 +14,7 @@
     <main>
 <header>
         <img src="img/logo-culturama.png" alt="Culturama-Logo">
-    <h1>Pesquisa Online</h1>
+    <h1>Pesquisa de Opinião</h1>
     </header>
 <section>
     <!--DADOS PESSOAIS -->
@@ -22,19 +22,19 @@
     <fieldset>
 <legend>Dados Pessoais✏️</legend>
     <label for="name">Nome</label>
-    <input id="name" name="UserName" required>
+    <input id="name" type="text" name="UserName" required>
     <br>
     <label for="userAge">Idade</label>
-    <input id="userAge" name="userAge" min="12" max="110" required>
+    <input id="userAge" type="text" name="userAge" min="12" max="110" required>
     <br>
     <label for="Birthdate">Data de Nascimento</label>
-    <input type="date" name="Birthdate">
+    <input type="date" name="Birthdate" required>
     <br>
     <label for="email">Email</label>
     <input id="email" type="email" name="userEmail" required>
     <br>
     <label for="TEL">Telefone</label>
-    <input id="TEL" type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número">
+    <input id="TEL" type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número" required>
     <br>
     <label for="userImage">Upload de Foto</label>
     <input type="file" accept="image/*" name="userImage">
@@ -57,7 +57,7 @@
 <!--Estado Civil -->
     <label for="MaritalStatus">Estado Civil</label>
     <select name="MaritalStatus">
-    <option value="NotInformed">Selecione...</option>
+    <option value="NotInformed">Selecione... </option>
     <option value="Casado">Casado(a)</option>
     <option value="Solteiro">Solteiro(a)</option>
     <option value="Divorciado">Divorciado(a)</option>
@@ -66,8 +66,9 @@
     <!--Localidade -->
 </select>
 <br>
-<label for="Location">Estado</label required>
-    <select name="Location">
+<label for="Location">Estado</label >
+    <select name="Location" required>
+            <option value="Select">Selecione...</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
@@ -126,7 +127,7 @@
     <label for="youtube">YouTube</label>
 <br>
     <label for="MusicStyle">Estilo Musical</label>
-    <input list="Styletypes" id="MusicStyle" type="text">
+    <input list="Styletypes" id="MusicStyle" type="text" required>
     <datalist id="Styletypes">
 <option value="Rock">
     <option value="Funk">

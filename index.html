@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/culturama-favico.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
     <title> Pesquisa Culturama</title>
 </head>
 <body>
-    <header>
-    <header>
-    <h1>Pesquisa Online</h1>
+    <main>
+<header>
+        <img src="img/logo-culturama.png" alt="Culturama-Logo">
+    <h1>Pesquisa de Opinião</h1>
+    </header>
 <section>
-<form action="" method="get">
-<!--DADOS PESSOAIS -->
+    <!--DADOS PESSOAIS -->
+<form action="sucess.html" method="get">
     <fieldset>
-<legend>Dados Pessoais</legend>
+<legend>Dados Pessoais✏️</legend>
     <label for="name">Nome</label>
-    <input id="name" name="UserName" required>
+    <input id="name" type="text" name="UserName" required>
     <br>
     <label for="userAge">Idade</label>
-    <input id="userAge" name="userAge" min="12" max="110" required>
+    <input id="userAge" type="text" name="userAge" min="12" max="110" required>
     <br>
     <label for="Birthdate">Data de Nascimento</label>
-    <input type="date" name="Birthdate">
+    <input type="date" name="Birthdate" required>
     <br>
     <label for="email">Email</label>
     <input id="email" type="email" name="userEmail" required>
     <br>
     <label for="TEL">Telefone</label>
-    <input id="TEL" type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número">
+    <input id="TEL" type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número" required>
     <br>
     <label for="userImage">Upload de Foto</label>
     <input type="file" accept="image/*" name="userImage">
@@ -35,7 +42,7 @@
     </fieldset>
 <!--PERFIL -->
 <fieldset>
-    <legend>Perfil</legend>
+    <legend>Perfil🧑‍🧒</legend>
     <!--Genero -->
 <p1>Genêro:</p1>
     <input id="genderfemea" type="radio" name="UserGender" value="Feminino">
@@ -50,7 +57,7 @@
 <!--Estado Civil -->
     <label for="MaritalStatus">Estado Civil</label>
     <select name="MaritalStatus">
-    <option value="NotInformed">Selecione...</option>
+    <option value="NotInformed">Selecione... </option>
     <option value="Casado">Casado(a)</option>
     <option value="Solteiro">Solteiro(a)</option>
     <option value="Divorciado">Divorciado(a)</option>
@@ -59,8 +66,9 @@
     <!--Localidade -->
 </select>
 <br>
-<label for="Location">Estado</label required>
-    <select name="Location">
+<label for="Location">Estado</label >
+    <select name="Location" required>
+            <option value="Select">Selecione...</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
@@ -95,7 +103,7 @@
 </fieldset>
                 <!--HABITOS-->
 <fieldset>
-    <legend>Hábitos </legend>
+    <legend>Hábitos🎭</legend>
         <p>Redes Sociais</p>
     <input id="insta" type="checkbox" name="socials" value="Instagram">
     <label for="insta">Instagram</label>
@@ -119,7 +127,7 @@
     <label for="youtube">YouTube</label>
 <br>
     <label for="MusicStyle">Estilo Musical</label>
-    <input list="Styletypes" id="MusicStyle" type="text">
+    <input list="Styletypes" id="MusicStyle" type="text" required>
     <datalist id="Styletypes">
 <option value="Rock">
     <option value="Funk">
@@ -135,7 +143,7 @@
 </fieldset>
 <fieldset>
     <!--PESQUISA DE SATISFAÇÃO-->
-<legend>Pesquisa de Satisfação</legend>
+<legend>Pesquisa de Satisfação🔍</legend>
 <input id="otima" type="radio" name="satisfacao" value="otima">
 <label for="otima">Ótima</label>
 
@@ -151,22 +159,21 @@
 <br>
 <textarea 
     id="comentario" 
-    name="comentario" 
-    maxlength="2000" 
+    name="comentario"
     rows="8" 
-    cols="60" 
+    cols="80" 
     placeholder="Deixe seu comentário aqui...">
 </textarea>
 </fieldset>
 <!--CONFIRMAÇÕES DO USUÁRIO-->
 <fieldset>
-    <legend>Confirmações</legend>
+    <legend>Confirmações✔️</legend>
 
     <input type="checkbox" name="UserLGPD" id="userlgpdterm" value="accepted" required>
     <label for="userlgpdterm">Eu aceito a participar da pesquisa</label>
 <br>
-    <input type="checkbox" name="UserGetResult" id="GetResults" value="accepted">
-    <label for="userlgpdterm">Desejo receber o resultado por email</label>
+    <input type="checkbox" name="UserGetResult" id="useracceptedemail" value="accepted">
+    <label for="useracceptedemail">Desejo receber o resultado por email</label>
 </fieldset>
 
     <button type="submit">Enviar</button>
@@ -174,5 +181,6 @@
 </form>
     </section>
     </header>
+    </main>
 </body>
 </html>

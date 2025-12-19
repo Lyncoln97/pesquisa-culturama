@@ -50,6 +50,15 @@ legend{
     
 }
 
+input[type="tel"]
+{
+margin-bottom: 0px;
+}
+
+small{
+    margin-bottom: 20px;
+    display: inline-block;
+}
 
 input[type="color"]{
     width: 40px;

@@ -28,16 +28,17 @@
     <input id="userAge" type="text" name="userAge" min="12" max="110" required>
     <br>
     <label for="Birthdate">Data de Nascimento</label>
-    <input type="date" name="Birthdate" required>
+    <input id="Birthdate" type="date" name="Birthdate" required>
     <br>
     <label for="email">Email</label>
     <input id="email" type="email" name="userEmail" required>
     <br>
     <label for="TEL">Telefone</label>
-    <input id="TEL" type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número" required>
+    <input id="TEL" type="tel" name="UserNumberPhone" pattern="[0-9]{11}"placeholder="DDD+número" required aria-describedby="PhoneHelp">
+    <small id="PhoneHelp">Prencher com 11 digítos no formato: DDD+Número sem espaços ou hífen.</small>
     <br>
     <label for="userImage">Upload de Foto</label>
-    <input type="file" accept="image/*" name="userImage">
+    <input id="userImage" type="file" accept="image/*" name="userImage">
     <br>
     </fieldset>
 <!--PERFIL -->
@@ -56,7 +57,7 @@
     <br>
 <!--Estado Civil -->
     <label for="MaritalStatus">Estado Civil</label>
-    <select name="MaritalStatus">
+    <select id="MaritalStatus" name="MaritalStatus">
     <option value="NotInformed">Selecione... </option>
     <option value="Casado">Casado(a)</option>
     <option value="Solteiro">Solteiro(a)</option>
@@ -67,7 +68,7 @@
 </select>
 <br>
 <label for="Location">Estado</label >
-    <select name="Location" required>
+    <select id="Location" name="Location" required>
             <option value="Select">Selecione...</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -139,7 +140,7 @@
     </datalist>
     <br>
     <label for="Color">Cor Favorita</label>
-    <input type="color" name="UserFavoriteColor" id="Coior">
+    <input type="color" name="UserFavoriteColor" id="Color">
 </fieldset>
 <fieldset>
     <!--PESQUISA DE SATISFAÇÃO-->

@@ -3,113 +3,157 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-background-color:whitesmoke;
-    font-family: "work sans", sans-serif;
+
+body {
+    background-color: whitesmoke;
+    font-family: "Work Sans", sans-serif;
 }
 
-main{
+main {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-
+    
 }
+
 header {
     text-align: center;
     margin-bottom: 20px;
 }
-img{
+
+img {
     width: 100px;
 }
 
-h1{
-font-family: "Momo Trust Display",sans-serif;
-text-decoration:overline;
+h1 {
+    font-family: "Momo Trust Display", sans-serif;
+    text-decoration: overline;
 }
 
-form{
+form {
     background-color: #ffffff;
     padding: 15px;
     border-radius: 15px;
-box-shadow: 0 10px 20px rgba(0, 60, 30, 0.59), 
+    box-shadow: 0 10px 20px rgba(0, 60, 30, 0.59), 
                 0 6px 6px rgba(0, 0, 0, 0.45);
-                margin-bottom: 100px;
+    margin-bottom: 100px;
 }
-fieldset{
+
+fieldset {
     border-radius: 5px;
     font-size: 20px;
     padding: 15px;
     border: 2px solid #303030;
     margin-bottom: 15px;
-    
 }
-legend{
+
+legend {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+input[type="tel"],
+input[type="file"] {
+    margin-bottom: 0px;
     
 }
 
-
-input[type="color"]{
-    width: 40px;
-    padding: 0 5px;
+small {
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #555;
 }
 
-input, select, textarea{
+input, select, textarea {
     width: 100%;
     padding: 8px;
-    margin-bottom: 1px solid #cccccc ;
+    border: 1px solid #cccccc;
     border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: "Work Sans", sans-serif;
 }
 
-textarea{
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: 3px solid rgb(0, 153, 255);
+    outline-offset: 1px;
+}
+
+textarea {
     min-height: 100px;
+    resize: vertical;
 }
 
 input[type="radio"],
-input[type="checkbox"]{
-    width:auto;
+input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
 }
-input[type="color"]{
+
+input[type="color"] {
     width: 40px;
     padding: 0 5px;
+    height: 30px;
 }
-input:invalid,
-select:invalid,
-textarea:invalid{
+
+input:invalid:not(:placeholder-shown),
+select:invalid:not(:placeholder-shown) {
     border-color: rgba(255, 111, 16, 0.808);
 }
+
 input:valid,
 select:valid,
-textarea:valid{
-        border-color: rgb(0, 153, 255);
+textarea:valid {
+    border-color: rgb(0, 153, 255);
 }
-button
-{
+
+button {
     width: 100px;
     height: 35px;
-    border-radius:5px;
+    border-radius: 5px;
     text-align: center;
-margin-right: 10px;
-background-color: #ffffff ;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.11), 
+    margin-right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.11), 
                 0 3px 3px rgba(0, 0, 0, 0.3);
-cursor:pointer;
-font-size: 12px;
-font-family: "Momo Trust Display",sans-serif;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Momo Trust Display", sans-serif;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
 }
-button[type="submit"]:hover{
-    background-color: rgb(0, 153, 255) ;
+
+button[type="submit"]:hover {
+    background-color: rgb(0, 153, 255);
+    color: white;
 }
-button[type="reset"]:hover{
-    background-color:rgba(255, 111, 16, 0.808) ;
+
+button[type="reset"]:hover {
+    background-color: rgba(255, 111, 16, 0.808);
+    color: white;
 }
-h2{
+
+h2 {
     text-align: center;
     margin-top: 100px;
 }
-p{
-    text-align: center;
-    margin-top: 40px;
+
+
+p {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
